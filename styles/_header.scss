@@ -1,0 +1,7 @@
+$font-title:'Playfair Display', serif;
+$font-tamanho: 18px;
+
+.title-recipe{
+    font: 100% $font-title;
+    height: $font-tamanho;
+}
