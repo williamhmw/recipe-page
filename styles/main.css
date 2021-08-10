@@ -1,5 +1,231 @@
+:root {
+  font-size: 16px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, strong,
+b, u, i, center, ol, ul, li, label, footer, header,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+main {
+  padding: 0 0.75rem 0 0.6875rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+/*****  Icons   ******/
+.material-icons {
+  color: #C4C4C4;
+}
+
+.material-icons .text-recipe {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  padding-right: 0.75rem;
+}
+
+.material-icons .servings-recipe {
+  color: red;
+}
+
+/************/
 .title-recipe {
-  font: 100% "Playfair Display", serif;
-  height: 18px;
+  padding-top: 2rem;
+}
+
+.title-recipe p {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.text-recipe {
+  padding-top: 0.75rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  color: #4F4F4F;
+}
+
+.text-recipe p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.image-recipe {
+  padding-top: 0.75rem;
+}
+
+.image-recipe img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+}
+
+/***********/
+.data-recipe {
+  display: -ms-grid;
+  display: grid;
+}
+
+.data-recipe p {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 0.5rem;
+  font-style: normal;
+  color: #BDBDBD;
+}
+
+.data-recipe .material-icons {
+  grid-row: span 2;
+  padding-right: 0.33875rem;
+}
+
+.data-recipe .servings-color-special {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.625rem;
+  font-style: normal;
+  color: #F2994A;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding-right: 0.6875rem;
+}
+
+.data-recipe .servings-color {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.625rem;
+  font-style: normal;
+  color: #333333;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding-right: 0.6875rem;
+}
+
+.servings-recipe {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.time-recipe {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  padding-bottom: 1.875rem;
+}
+
+.time-recipe div {
+  display: -ms-grid;
+  display: grid;
+  padding-right: 0.75rem;
+}
+
+/***********/
+.ingredients {
+  padding-bottom: 0.8125rem;
+}
+
+.ingredients p {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-style: normal;
+}
+
+.title-ingredients {
+  padding-top: 1.25rem;
+  padding-bottom: 1.4375rem;
+}
+
+.title-ingredients p {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/*****   Checkbox   *****/
+label {
+  margin-bottom: 1.25rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: normal;
+}
+
+label span {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 0.875rem;
+  font-style: normal;
+}
+
+input {
+  border: 1px solid #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 21px;
+  height: 21px;
+}
+
+/**/
+.instructions-recipe .title-recipe {
+  padding-bottom: 1.75rem;
+}
+
+li {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  margin-left: 1rem;
+  margin-bottom: 0.6875rem;
+}
+
+.source {
+  padding-top: 0.625rem;
+  padding-bottom: 8.0625rem;
+}
+
+.source p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+footer {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  font-style: normal;
 }
 /*# sourceMappingURL=main.css.map */

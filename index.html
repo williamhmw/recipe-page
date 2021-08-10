@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<link rel="stylesheet" href="./styles/main.css">
     <title>Recipe page</title>
 </head>
 <body>
@@ -20,7 +24,9 @@
         <div class="description-recipe">
 
             <div class="title-recipe"><p>Receita de Cheesecake Clássica</p></div>
-            <div class="text-recipe"><p>Não procure mais por uma receita de cheesecake clássica cremosa e ultra suave! Emparelhado com uma crosta amanteigada de biscoito Graham, ninguém pode negar sua decadência simples. Para obter os melhores resultados, leve ao forno em banho-maria.</p></div>
+            <div class="text-recipe"><span class="material-icons outlined">
+                drag_indicator
+                </span><p>Não procure mais por uma receita de cheesecake clássica cremosa e ultra suave! Emparelhado com uma crosta amanteigada de biscoito Graham, ninguém pode negar sua decadência simples. Para obter os melhores resultados, leve ao forno em banho-maria.</p></div>
             <div class="image-recipe"><img src="./img/photo1.png" alt=""></div>
 
         </div>
@@ -29,48 +35,69 @@
 
             <div class="data-recipe">
 
-                <div-servings-recipe></div-servings-recipe>
-                <div class="time-recipe"></div>
+                <div class="servings-recipe">
+                    <span class="material-icons">restaurant_menu</span>
+                    <p>Rendimentos</p>
+                    <p class="servings-color-special">12 porções</p>
+                </div>
+                <div class="time-recipe">
+                    <div>
+                        <span class="material-icons">schedule</span>
+                        <p>Temp. preparo</p>
+                        <p class="servings-color">45 minutos</p>
+                    </div>
+                    <div>
+                        <span class="material-icons">schedule</span>
+                        <p>Temp. cozimento</p>
+                        <p class="servings-color">45 minutos</p>
+                    </div>
+                    <div>
+                        <span class="material-icons">schedule</span>
+                        <p>Temp. total</p>
+                        <p class="servings-color">45 minutos</p>
+                    </div>
+                    
+                </div>
     
             </div>
 
-            <div class="ingredients"><p>Ingredients</p></div>
-            <div class="title-ingrdients"><p>Graham Cracker Crust</p></div>
+            <div class="ingredients"><p>Ingredientes</p></div>
+            <div class="title-ingredients"><p>Graham Cracker Crust</p></div>
             <div class="ingredients-selected">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="ingredients" name="ingredients1" value="ingredients1">
+                    <label for="ingredients">1 e 1/2 xícaras (150g) de <span>migalhas de biscoito de graham</span> (cerca de 10 biscoitos de graham de folha inteira)</label><br>
+                <input type="checkbox" id="ingredients" name="ingredients2" value="ingredients2">
+                    <label for="ingredients">5 colheres de sopa (70g) de <span>manteiga sem sal</span>, derretida</label><br>
+                <input type="checkbox" id="ingredients" name="ingredients3" value="ingredients3">
+                    <label for="ingredients">1/4 xícara (50g) de <span>açúcar granulado</span></label><br>
             </div>
-            <div class="title-ingrdients"><p>Cheesecake
+            <div class="title-ingredients"><p>Cheesecake
             </p></div>
             <div class="ingredients-selected">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="ingredients-2" name="ingredients-2" value="ingredients-2">
+                    <label for="ingredients-2">blocos de 8 onças (904g) de <span>cream cheese integral</span>, amolecido à temperatura ambiente </label><br>
+                <input type="checkbox" id="ingredients-2" name="ingredients-2" value="ingredients-2">
+                    <label for="ingredients-21">1 xícara (200g) de <span>açúcar granulado</span></label><br>
+                <input type="checkbox" id="ingredients-2" name="ingredients-2" value="ingredients-2">
+                    <label for="ingredients-2">1 xícara (240g) de <span>creme de leite integral</span>, em temperatura ambiente</label><br>
+                <input type="checkbox" id="ingredients-2" name="ingredients-2" value="ingredients-2">
+                    <label for="ingredients-2">1 colher de chá de <span>extrato de baunilha</span> puro</label><br>
+                <input type="checkbox" id="ingredients-2" name="ingredients-2" value="ingredients-2">
+                    <label for="ingredients-2">2 colheres de chá de <span>suco de limão</span> fresco (opcional, mas recomendado)</label><br>
+                <input type="checkbox" id="ingredients-2" name="ingredients-2" value="ingredients-2">
+                    <label for="ingredients-2">3 <span>ovos</span> grandes, em temperatura ambiente</label><br>
+                <input type="checkbox" id="ingredients-2" name="ingredients-2" value="ingredients-2">
+                    <label for="ingredients-2">sugestões de cobertura: caramelo salgado, coalhada de limão, cobertura de morango, ganache de chocolate, ganache de chocolate de vinho tinto, frutas frescas, chantilly ou molho de framboesa (receita em notas)</label><br>
             </div>
         </div>
 
         <div class="instructions-recipe">
 
-            <div class="title-recipe">Instruções</div>
+            <div class="title-recipe"><p>Instruções</p></div>
             <ol>
-                <li>Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).</li>
-                <li>Make the crust: Using a food processor, pulse the graham crackers into crumbs. Pour into a medium bowl and stir in sugar and melted butter until combined. (You can also pulse it all together in the food processor.) Mixture will be sandy. Press firmly into the bottom and slightly up the sides of a 9-inch or 10-inch springform pan. No need to grease the pan first. I use the bottom of a measuring cup to pack the crust down tightly. Pre-bake for 8 minutes. Remove from the oven and place the hot pan on a large piece of aluminum foil. The foil will wrap around the pan for the water bath in step 4. Allow crust to slightly cool as you prepare the filling.</li>
-                <li>Make the filling: Using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and granulated sugar together on medium-high speed in a large bowl until the mixture is smooth and creamy, about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully combined. On medium speed, add the eggs one at a time, beating after each addition until just blended. After the final egg is incorporated into the batter, stop mixing. To help prevent the cheesecake from deflating and cracking as it cools, avoid over-mixing the batter as best you can.</li>
+                <li>Ajuste a grelha do forno para a posição intermediária inferior e pré-aqueça o forno a 350 ° F (177 ° C).</li>
+                <li>Faça a crosta: usando um processador de alimentos, bata os biscoitos em migalhas. Despeje em uma tigela média e acrescente o açúcar e a manteiga derretida até incorporar. (Você também pode pulsar todos juntos no processador de alimentos.) A mistura será arenosa. Pressione com firmeza na parte inferior e levemente para cima nas laterais de uma forma de forma de mola de 23 ou 25 cm. Não há necessidade de untar a assadeira primeiro. Eu uso o fundo de um copo medidor para compactar a crosta com firmeza. Pré-leve ao forno por 8 minutos. Retire do forno e coloque a panela quente sobre um grande pedaço de papel alumínio. O papel alumínio vai envolver a panela para o banho-maria na etapa 4. Deixe a crosta esfriar um pouco enquanto prepara o recheio.</li>
+                <li>Faça o recheio: Usando uma batedeira de mão ou de mesa com batedeira em formato de pá, bata o cream cheese e o açúcar granulado em velocidade média-alta em uma tigela grande até obter uma mistura homogênea e cremosa, cerca de 2 minutos. Adicione o creme de leite, o extrato de baunilha e o suco de limão e bata até incorporar bem. Em velocidade média, adicione os ovos um de cada vez, batendo a cada adição até ficar bem homogêneo. Depois que o ovo final for incorporado à massa, pare de misturar. Para ajudar a evitar que o cheesecake murche e estale à medida que esfria, evite misturar demais a massa da melhor maneira possível.</li>
             </ol>
             <div class="source"><p>Source: https://sallysbakingaddiction.com/classic-cheesecake/</p></div>
         </div>
