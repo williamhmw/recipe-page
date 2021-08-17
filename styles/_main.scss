@@ -4,7 +4,7 @@
     font-size: $size;
     font-style: $style;
 }
-
+$orange: #F2994A;
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
@@ -13,22 +13,13 @@ font-family: 'Playfair Display', serif;
 main{
     padding: 0 0.75rem 0 0.6875rem;
     display: grid;
+    
 }
 
 /*****  Icons   ******/
 
 .material-icons{
-    color:#C4C4C4;
-    //writing-mode: vertical-lr; // Verificar para girar somente um tipo de ícone
-    //padding-right: 0.75rem;
-    .text-recipe{
-        writing-mode: vertical-lr;
-        padding-right: 0.75rem;
-    }
-    .servings-recipe{
-        color: red;
-    }
-    
+    color:#C4C4C4;    
 }
 
 /************/
@@ -43,13 +34,17 @@ main{
 }
 
 .text-recipe {
-    p{
-        @include font('Montserrat', 500, 0.75rem, italic);
-    }
     padding-top: 0.75rem;
     display: grid;
     grid-template-columns: auto 1fr;
     color: #4F4F4F;
+    p{
+        @include font('Montserrat', 500, 0.75rem, italic);
+    }
+    .material-icons{
+        writing-mode: vertical-lr;
+        padding-right: 0.75rem;
+    }
 }
 
 .image-recipe{
@@ -65,27 +60,27 @@ main{
 
 .data-recipe{
     display: grid; 
-    p{
-        @include font('Montserrat', 700, 0.5rem, normal);
-        color:#BDBDBD;
-        
-    }
-    .material-icons{
-        grid-row: span 2;
-        padding-right: 0.33875rem;
-    }
-    .servings-color-special{
-        @include font('Montserrat', 500, 0.625rem, normal);
-        color: #F2994A;
-        grid-column: 2; 
-        padding-right: 0.6875rem;
-    }
-    .servings-color{
-        @include font('Montserrat', 500, 0.625rem, normal);
-        color: #333333;
-        grid-column: 2; 
-        padding-right: 0.6875rem;
-    }
+        p{
+            @include font('Montserrat', 700, 0.5rem, normal);
+            color:#BDBDBD;
+            
+        }
+        .material-icons{
+            grid-row: span 2;
+            padding-right: 0.33875rem;
+        }
+        .servings-color-special{
+            @include font('Montserrat', 500, 0.625rem, normal);
+            color: $orange;
+            grid-column: 2; 
+            padding-right: 0.6875rem;
+        }
+        .servings-color{
+            @include font('Montserrat', 500, 0.625rem, normal);
+            color: #333333;
+            grid-column: 2; 
+            padding-right: 0.6875rem;
+        }
     
 }
 
@@ -94,6 +89,9 @@ main{
     grid-template-columns: auto 1fr;
     padding-top: 1.5rem;
     padding-bottom: 1.25rem;
+        .material-icons{
+            color: $orange;
+        }
 }
 
 .time-recipe{
@@ -101,10 +99,10 @@ main{
     grid-template-columns: auto auto auto ;
     justify-self: start;
     padding-bottom: 1.875rem;
-    div{
-        display:grid;
-        padding-right: 0.75rem;
-    }
+        div{
+            display:grid;
+            padding-right: 0.75rem;
+        }
 }
 
 
@@ -112,17 +110,17 @@ main{
 
 .ingredients{
     padding-bottom: 0.8125rem;
-    p{
-        @include font('Playfair Display', 700, 1.125rem);
-    }
+        p{
+            @include font('Playfair Display', 700, 1.125rem);
+        }
 }
 
 .title-ingredients{
     padding-top: 1.25rem;
     padding-bottom: 1.4375rem;
-    p{
-        @include font('Playfair Display', 400, 1rem, italic);
-    }
+        p{
+            @include font('Playfair Display', 400, 1rem, italic);
+        }
 }
 
 /*****   Checkbox   *****/
@@ -131,9 +129,9 @@ main{
 label{
     margin-bottom: 1.25rem;
     @include font('Montserrat', 400, 0.875rem);
-    span{
-        @include font('Montserrat', 700, 0.875rem);
-    }
+        span{
+            @include font('Montserrat', 700, 0.875rem);
+        }
 }
 
 input {
@@ -153,10 +151,32 @@ input {
     }
 }
 
-li{
+.instructions-recipe-text{
     @include font('Montserrat', 400, 1rem);
-    margin-left: 1rem;
     margin-bottom:  0.6875rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+        span{
+        @include font('Montserrat', 700, 1rem);
+        }
+        .number-instructions{
+            width: 2.25rem;
+            height: 2.25rem;
+            background-color: #F2994A;
+            color: white;
+            border-radius: 0.375rem;
+            width: 2.25rem;
+            height: 2.25rem;
+            margin-right: 1rem;
+            display: grid;
+            align-content: space-around;
+            justify-content: space-around;
+            margin-bottom: 1.875rem;
+            @include font('Playfair Display', 700, 1.5rem);
+        }
+        p{
+            margin-bottom: 1.875rem;
+        }
 }
 
 .source{
@@ -167,6 +187,3 @@ li{
     }
 }
 
-footer{
-    @include font('Montserrat', 500, 0.875rem);
-}
